@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CuentasDetalleRepositirio.Entidades
 {
-    class Cuentas
+   public class Cuentas
     {
         [Key]
         public int CuentasId { get; set; }
