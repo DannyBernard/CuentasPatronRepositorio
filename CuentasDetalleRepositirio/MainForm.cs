@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CuentasDetalleRepositirio.UI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,13 @@ namespace CuentasDetalleRepositirio
         public MainForm()
         {
             InitializeComponent();
+        }
+
+        private void registroToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            RCuentas rCuentas = new RCuentas();
+            rCuentas.Show();
+            rCuentas.MdiParent = this;
         }
     }
 }

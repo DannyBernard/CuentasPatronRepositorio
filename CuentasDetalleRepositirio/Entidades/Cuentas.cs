@@ -12,13 +12,13 @@ namespace CuentasDetalleRepositirio.Entidades
         [Key]
         public int CuentasId { get; set; }
         public string Descripcion { get; set; }
-        public int TipoId { get; set; }
+        public double Monto { get; set; }
 
         public Cuentas()
         {
             CuentasId = 0;
             Descripcion = string.Empty;
-            TipoId = 0;
+            Monto = 0;
 
         }
     }

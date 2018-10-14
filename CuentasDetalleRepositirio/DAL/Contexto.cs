@@ -10,7 +10,7 @@ namespace CuentasDetalleRepositirio.DAL
 {
     class Contexto : DbContext
     {
-        public DbSet<Cuentas>Cuenta { get; set; }
+        public DbSet<Cuentas>Cuentas { get; set; }
         public DbSet<Presupuesto> Presupuesto { get; set; }
         public DbSet<TiposDeCuentas> TiposDeCuenta { get; set; }
 
