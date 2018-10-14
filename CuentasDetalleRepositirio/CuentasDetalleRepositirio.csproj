@@ -72,6 +72,18 @@
     <Compile Include="UI\RCuentas.Designer.cs">
       <DependentUpon>RCuentas.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\RPresupuesto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\RPresupuesto.Designer.cs">
+      <DependentUpon>RPresupuesto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\RTipoCuentascs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\RTipoCuentascs.Designer.cs">
+      <DependentUpon>RTipoCuentascs.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -87,6 +99,12 @@
     </Compile>
     <EmbeddedResource Include="UI\RCuentas.resx">
       <DependentUpon>RCuentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\RPresupuesto.resx">
+      <DependentUpon>RPresupuesto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\RTipoCuentascs.resx">
+      <DependentUpon>RTipoCuentascs.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

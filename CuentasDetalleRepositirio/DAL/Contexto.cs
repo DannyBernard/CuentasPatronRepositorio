@@ -12,7 +12,7 @@ namespace CuentasDetalleRepositirio.DAL
     {
         public DbSet<Cuentas>Cuentas { get; set; }
         public DbSet<Presupuesto> Presupuesto { get; set; }
-        public DbSet<TiposDeCuentas> TiposDeCuenta { get; set; }
+        public DbSet<TiposDeCuentas> TiposDeCuentas { get; set; }
 
         public Contexto(): base("ConStr")
         {

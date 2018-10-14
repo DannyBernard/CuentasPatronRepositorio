@@ -24,5 +24,12 @@ namespace CuentasDetalleRepositirio
             rCuentas.Show();
             rCuentas.MdiParent = this;
         }
+
+        private void tipoDeCuentasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RTipoCuentascs rTipoCuentascs = new RTipoCuentascs();
+            rTipoCuentascs.Show();
+            rTipoCuentascs.MdiParent = this;
+        }
     }
 }

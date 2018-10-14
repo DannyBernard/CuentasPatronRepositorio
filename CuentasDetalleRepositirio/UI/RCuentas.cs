@@ -76,6 +76,21 @@ namespace CuentasDetalleRepositirio.UI
 
         private void Guardarbutton_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void Eliminarbutton_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void Buscarbutton_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void Guardarbutton_Click_1(object sender, EventArgs e)
+        {
             repositorio = new RepositorioBase<Cuentas>();
             Cuentas cuentas;
             bool paso = false;
@@ -104,7 +119,7 @@ namespace CuentasDetalleRepositirio.UI
             }
         }
 
-        private void Eliminarbutton_Click(object sender, EventArgs e)
+        private void Eliminarbutton_Click_1(object sender, EventArgs e)
         {
             int id;
             repositorio = new RepositorioBase<Cuentas>();
@@ -126,7 +141,7 @@ namespace CuentasDetalleRepositirio.UI
             }
         }
 
-        private void Buscarbutton_Click(object sender, EventArgs e)
+        private void Buscarbutton_Click_1(object sender, EventArgs e)
         {
             int id;
             repositorio = new RepositorioBase<Cuentas>();
@@ -142,5 +157,7 @@ namespace CuentasDetalleRepositirio.UI
             else
                 MessageBox.Show("no exite");
         }
+
+        
     }
 }

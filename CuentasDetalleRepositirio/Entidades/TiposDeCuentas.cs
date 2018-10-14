@@ -7,15 +7,15 @@ using System.Threading.Tasks;
 
 namespace CuentasDetalleRepositirio.Entidades
 {
-    class TiposDeCuentas
+   public class TiposDeCuentas
     {
         [Key]
-        public int TipoCuentas { get; set; }
+        public int TipoCuentasID { get; set; }
         public string Desripcion { get; set; }
 
         public TiposDeCuentas()
         {
-            TipoCuentas = 0;
+            TipoCuentasID = 0;
             Desripcion = string.Empty;
 
         }
