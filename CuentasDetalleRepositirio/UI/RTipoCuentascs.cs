@@ -61,36 +61,7 @@ namespace CuentasDetalleRepositirio.UI
             Limpiar();
         }
 
-        private void Guardarbutton_Click(object sender, EventArgs e)
-        {
-            repositorio = new RepositorioBase<TiposDeCuentas>();
-            bool paso = false;
-            TiposDeCuentas tiposDeCuentas;
-
-            tiposDeCuentas = LlenaClase();
-            if (!Validar())
-                return;
-
-            if (TipoIDnumericUpDown.Value >= 0)
-                paso = repositorio.Guardar(tiposDeCuentas);
-            else
-            {
-                if (!ExiteEnlaDB())
-                {
-                    MessageBox.Show("no exite ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-                paso = repositorio.Modificar(tiposDeCuentas);
-
-                if (paso)
-                {
-                    MessageBox.Show("Guardo Correctamente!!", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    Limpiar();
-                }else
-                    MessageBox.Show(" no Guardo !", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-            }
-        }
+      
 
         private void Eliminarbutton_Click(object sender, EventArgs e)
         {
@@ -135,6 +106,41 @@ namespace CuentasDetalleRepositirio.UI
 
 
 
+        }
+
+        private void Guardarbutton_Click(object sender, EventArgs e)
+        {
+             repositorio = new RepositorioBase<TiposDeCuentas>();
+            bool paso = false;
+            TiposDeCuentas tiposDeCuentas;
+
+            tiposDeCuentas = LlenaClase();
+            if (!Validar())
+                return;
+
+            if (TipoIDnumericUpDown.Value >= 0)
+
+                paso = repositorio.Guardar(tiposDeCuentas);
+
+            else
+            {
+                if (!ExiteEnlaDB())
+                {
+                    MessageBox.Show("no exite ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                paso = repositorio.Modificar(tiposDeCuentas);
+
+                if (paso)
+                {
+                    MessageBox.Show("Guardo Correctamente!!", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Limpiar();
+                }
+                else
+                    MessageBox.Show(" no Guardo !", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
         }
     }
 }
