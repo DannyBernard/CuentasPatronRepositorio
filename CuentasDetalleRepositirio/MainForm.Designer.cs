@@ -35,6 +35,7 @@
             this.registroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registroToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.tipoDeCuentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.presupuestoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,7 +76,8 @@
             // 
             this.registroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.registroToolStripMenuItem1,
-            this.tipoDeCuentasToolStripMenuItem});
+            this.tipoDeCuentasToolStripMenuItem,
+            this.presupuestoToolStripMenuItem});
             this.registroToolStripMenuItem.Name = "registroToolStripMenuItem";
             this.registroToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.registroToolStripMenuItem.Text = "Registro";
@@ -93,6 +95,13 @@
             this.tipoDeCuentasToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.tipoDeCuentasToolStripMenuItem.Text = "Tipo De Cuentas";
             this.tipoDeCuentasToolStripMenuItem.Click += new System.EventHandler(this.tipoDeCuentasToolStripMenuItem_Click);
+            // 
+            // presupuestoToolStripMenuItem
+            // 
+            this.presupuestoToolStripMenuItem.Name = "presupuestoToolStripMenuItem";
+            this.presupuestoToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.presupuestoToolStripMenuItem.Text = "Presupuesto";
+            this.presupuestoToolStripMenuItem.Click += new System.EventHandler(this.presupuestoToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -120,6 +129,7 @@
         private System.Windows.Forms.ToolStripMenuItem registroToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registroToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem tipoDeCuentasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem presupuestoToolStripMenuItem;
     }
 }
 

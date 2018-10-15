@@ -31,5 +31,12 @@ namespace CuentasDetalleRepositirio
             rTipoCuentascs.Show();
             rTipoCuentascs.MdiParent = this;
         }
+
+        private void presupuestoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RPresupuesto presupuesto = new RPresupuesto();
+            presupuesto.Show();
+            presupuesto.MdiParent = this;
+        }
     }
 }

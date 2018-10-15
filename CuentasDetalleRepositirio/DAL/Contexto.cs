@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CuentasDetalleRepositirio.DAL
 {
-    class Contexto : DbContext
+   class Contexto : DbContext
     {
         public DbSet<Cuentas>Cuentas { get; set; }
         public DbSet<Presupuesto> Presupuesto { get; set; }

@@ -13,7 +13,7 @@ namespace CuentasDetalleRepositirio.Entidades
         public int PresupuestoId { get; set; }
         public string Descripcion { get; set; }
         public DateTime Fecha { get; set; }
-        public float Monto { get; set; }
+        public double Monto { get; set; }
 
         public Presupuesto()
         {

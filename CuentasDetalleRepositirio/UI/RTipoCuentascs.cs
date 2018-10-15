@@ -49,9 +49,12 @@ namespace CuentasDetalleRepositirio.UI
         public bool Validar()
         {
             bool paso = true;
+
             if (string.IsNullOrWhiteSpace(DescripciontextBox.Text))
+            
                 errorProvider1.SetError(DescripciontextBox, "Expacio en blanco");
-            paso = false;
+                paso = false;
+           
 
             return paso;
         }
@@ -111,17 +114,19 @@ namespace CuentasDetalleRepositirio.UI
         private void Guardarbutton_Click(object sender, EventArgs e)
         {
              repositorio = new RepositorioBase<TiposDeCuentas>();
-            bool paso = false;
+           
             TiposDeCuentas tiposDeCuentas;
-
+            bool paso = false;
             tiposDeCuentas = LlenaClase();
             if (!Validar())
                 return;
 
             if (TipoIDnumericUpDown.Value >= 0)
+            {
 
                 paso = repositorio.Guardar(tiposDeCuentas);
 
+            }
             else
             {
                 if (!ExiteEnlaDB())
@@ -131,7 +136,7 @@ namespace CuentasDetalleRepositirio.UI
                 }
 
                 paso = repositorio.Modificar(tiposDeCuentas);
-
+            }
                 if (paso)
                 {
                     MessageBox.Show("Guardo Correctamente!!", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -140,7 +145,7 @@ namespace CuentasDetalleRepositirio.UI
                 else
                     MessageBox.Show(" no Guardo !", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-            }
+            
         }
     }
 }
